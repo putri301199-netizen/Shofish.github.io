@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofish - Sparkling Blue Market</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="javaikan.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Shofish ✨</div>
+        <div class="nav-menu">
+            <a href="web ikan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p>WELCOME TO</p>
+            <h1>Sparkling</h1>
+            <p>BLUE WATER COLLECTION</p>
+        </div>
+    </section>
+
+  <section class="favorite-section">
+    <div class="section-title">
+        <h2>✨ Favorite Fish Collections ✨</h2>
+    </div>
+
+    <div class="product-grid">
+        
+        <div class="card favorite-card">
+            <div class="card-img-container">
+                <div class="badges-wrapper">
+                    <span class="type-badge">
+                        <span class="dot dot-secret"></span> Secret</span>
+                    <span class="type-badge favorite-tag">🔥 Favorite</span></div>
+                <img src="Maja.png" alt="Ikan">
+            </div>
+            <h3>Maja Ori</h3>
+            <p class="price">Rp 50.000</p>
+            <button class="btn-cart" onclick="addToCart('Maja Ori', 50000)">Tambah Keranjang</button>
+        </div>
+
+        <div class="card favorite-card">
+            <div class="card-img-container">
+                <div class="badges-wrapper">
+                    <span class="type-badge">
+                        <span class="dot dot-rare"></span> Rare</span>
+                    <div class="type-badge"><div class="dot dot-frozen"></div> Frozen</div>
+                    <span class="type-badge favorite-tag">🔥 Favorite</span>
+                </div>
+                <img src="Cute Octopus.png" alt="Ikan">
+            </div>
+            <h3>Cute Octopus Biru</h3>
+            <p class="price">Rp 20.000</p>
+            <button class="btn-cart" onclick="addToCart('Cute Octopus Biru', 20000)">Tambah Keranjang</button>
+        </div>
+
+        <div class="card favorite-card">
+            <div class="card-img-container">
+                <div class="badges-wrapper">
+                    <span class="type-badge">
+                        <span class="dot dot-legendary"></span> Legendary</span>
+                    <span class="type-badge favorite-tag">🔥 Favorite</span>
+                </div>
+                <img src="Easter Snail.png" alt="Ikan">
+            </div>
+            <h3>Easter Snail</h3>
+            <p class="price">Rp 20.000</p>
+            <button class="btn-cart" onclick="addToCart('Easter Snail', 20000)">Tambah Keranjang</button>
+        </div>
+
+        <div class="card favorite-card">
+            <div class="card-img-container">
+                <div class="badges-wrapper">
+                    <span class="type-badge">
+                        <span class="dot dot-uncommon"></span> Uncommon</span>
+                    <span class="type-badge favorite-tag">🔥 Favorite</span>
+                </div>
+                <img src="Easter Bunny Fish.png" alt="Ikan">
+            </div>
+            <h3>Easter Bunny Fish</h3>
+            <p class="price">Rp 7.000</p>
+            <button class="btn-cart" onclick="addToCart('Easter Bunny Fish', 7000)">Tambah Keranjang</button>
+        </div>
+
+    </div>
+    <div class="show-more-container">
+            <a href="katalog.html" class="show-more-btn">
+                Show More
+                <span class="triangle-icon"></span>
+            </a>
+        </div>
+</section>
+
+    
+
+    
+
+    <footer>
+        <p>© 2026 Shofish Market ✨ - High Quality Collections</p>
+    </footer>
+
+<div id="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-sidebar" class="cart-hidden">
+    <div class="cart-header">
+        <h3>Keranjang Belanja</h3>
+        <button onclick="toggleCart()">✖</button>
+    </div>
+    <div id="cart-items">
+        </div>
+    <div class="cart-footer">
+        <div class="total-price">Total: <span id="cart-total">Rp 0</span></div> 
+        <button class="btn-checkout" onclick="checkout()">Check Out</button>
+    </div>
+</div>
+        
+
+</body>
+</html>
