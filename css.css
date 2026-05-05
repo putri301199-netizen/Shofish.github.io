@@ -796,4 +796,40 @@
 .email-hint.error { color: #ff4d4d; }
 .email-hint.valid { color: #00aa66; }
 
+/* --- RESPONSIVE MOBILE (Tampilan HP) --- */
+@media (max-width: 600px) {
+    header {padding: 10px 4%;flex-direction: column;gap: 10px;}
+
+    .logo {font-size: 28px;}
+    .nav-menu {gap: 15px;font-size: 14px;}
+
+    .hero-section {height: 60vh;padding-top: 30px;}
+    .hero-content h1 {font-size: 38px;}
+    .hero-content p {font-size: 14px;letter-spacing: 2px;}
+
+    /*Filter Bar di-scroll horizontal */
+    .filter-bar {overflow-x: auto;white-space: nowrap;padding: 10px 5%;display: block;-webkit-overflow-scrolling: touch;}
+    .filter-bar-group {display: inline-flex;}
+    .filter-btn {padding: 6px 12px;font-size: 0.75em;}
+
+    /* Grid Produk*/
+    .product-grid {grid-template-columns: repeat(2, 1fr);gap: 12px;padding: 0;}
+
+    .card {padding: 12px;border-radius: 15px;}
+    .card img {height: 140px;}
+    .card h3 {font-size: 16px;}
+
+    #cart-sidebar {width: 85%;}
+
+    /* Form Pemesanan */
+    .form-box {padding: 20px;}
+
+    /* Layout Utama */
+    .main-layout {padding: 0 4%;gap: 20px;}
+
+    /* Tombol Kontak */
+    .contact-container { flex-direction: column;}
+    .contact-card { min-width: 100%;}
+}
+
     </style>    }
