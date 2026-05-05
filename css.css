@@ -602,10 +602,6 @@
             border-top: 5px solid #00d2ff; margin-top: 50px;
         }
 
-        @media (max-width: 900px) {
-            .main-layout { flex-direction: column; }
-            .sidebar { width: 100%; }
-        }
 
 /*ORDER PAGE*/
 #ringkasan-pesanan {
