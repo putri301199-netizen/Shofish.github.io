@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofish - Sparkling Blue Market</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="javaikan.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Shofish ✨</div>
+        <div class="search-box">
+            <input type="text" placeholder="Cari ikan impianmu...">
+            <button>Cari</button>
+        </div>
+        <div class="nav-menu">
+            <a href="web ikan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+<main class="content-area">
+            <h2 style="margin-bottom: 12px; color: #0086cc;">✨ Katalog Ikan Shofish ✨</h2>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-bar-group">
+                    <button class="filter-btn active" data-type="jenis" data-value="">Semua</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Secret"><span class="dot dot-secret"></span> Secret</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Mythic"><span class="dot dot-mythic"></span> Mythic</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Legendary"><span class="dot dot-legendary"></span> Legendary</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Epic"><span class="dot dot-epic"></span> Epic</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Rare"><span class="dot dot-rare"></span> Rare</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Uncommon"><span class="dot dot-uncommon"></span> Uncommon</button>
+                    <button class="filter-btn" data-type="jenis" data-value="Common"><span class="dot dot-common"></span> Common</button>
+                </div>
+            </div>
+            <div class="product-grid">
+                
+                <div class="card" data-jenis="Secret">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-secret"></div> Secret</div>
+                        </div>
+                        <img src="Maja.png" alt="Ikan">
+                    </div>
+                    <h3>Maja Ori</h3>
+                    <p class="price">Rp 50.000</p>
+                    <button class="btn-cart" onclick="addToCart('Maja Ori', 50000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Secret">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-secret"></div> Secret</div>
+                        </div>
+                        <img src="Maja Jeruk.png" alt="Ikan">
+                    </div>
+                    <h3>Maja Jeruk Ori</h3>
+                    <p class="price">Rp 75.000</p>
+                    <button class="btn-cart" onclick="addToCart('Maja Jeruk Ori', 75000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Secret">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-secret"></div> Secret</div>
+                        </div>
+                        <img src="Megalodon.png" alt="Ikan">
+                    </div>
+                    <h3>Megalodon</h3>
+                    <p class="price">Rp 150.000</p>
+                   <button class="btn-cart" onclick="addToCart('Megalodon', 150000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Secret">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-secret"></div> Secret</div>
+                            <div class="type-badge"><div class="dot dot-stone"></div> Stone</div>
+                        </div>
+                        <img src="Big Cryoshade Glider.png" alt="Ikan">
+                    </div>
+                    <h3>Big Cryoshade Glider</h3>
+                    <p class="price">Rp 45.000</p>
+                    <button class="btn-cart" onclick="addToCart('Big Cryoshade Glider', 45000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Legendary">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-legendary"></div> Legendary</div>
+                            <div class="type-badge"><div class="dot dot-fairydust"></div> Fairy Dust</div>
+                        </div>
+                        <img src="Ruby.png" alt="Ikan">
+                    </div>
+                    <h3>Ruby Pink</h3>
+                    <p class="price">Rp 20.000</p>
+                    <button class="btn-cart" onclick="addToCart('Ruby Pink', 20000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Rare">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-rare"></div> Rare</div>
+                            <div class="type-badge"><div class="dot dot-arcticfrost"></div> Arctic Frost</div>
+                        </div>
+                        <img src="Cute Octopus.png" alt="Ikan">
+                    </div>
+                    <h3>Cute Octopus Biru</h3>
+                    <p class="price">Rp 20.000</p>
+                   <button class="btn-cart" onclick="addToCart('Cute Octopus Biru', 20000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Legendary">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-legendary"></div> Legendary</div>
+                            <div class="type-badge"><div class="dot dot-frozen"></div> Frozen</div>
+                        </div>
+                        <img src="Easter Snail.png" alt="Ikan">
+                    </div>
+                    <h3>Easter Snail</h3>
+                    <p class="price">Rp 20.000</p>
+                    <button class="btn-cart" onclick="addToCart('Easter Snail', 20000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Mythic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-mythic"></div> Mythic</div>
+                            <div class="type-badge"><div class="dot dot-gold"></div> Gold</div>
+                        </div>
+                        <img src="Loggerhead Turtle.png" alt="Ikan">
+                    </div>
+                    <h3>Loggerhead Turtle</h3>
+                    <p class="price">Rp 12.000</p>
+                    <button class="btn-cart" onclick="addToCart('Loggerhead Turtle', 12000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Legendary">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-legendary"></div> Legendary</div>
+                            <div class="type-badge"><div class="dot dot-gold"></div> Gold</div>
+                        </div>
+                        <img src="Easter Duckling.png" alt="Ikan">
+                    </div>
+                    <h3>Easter Duckling</h3>
+                    <p class="price">Rp 18.000</p>
+                    <button class="btn-cart" onclick="addToCart('Easter Duckling', 18000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Rare">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-rare"></div> Rare</div>
+                            <div class="type-badge"><div class="dot dot-ghost"></div> Ghost</div>
+                        </div>
+                        <img src="Liar Nose Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Liar Nose Fish</h3>
+                    <p class="price">Rp 5.000</p>
+                    <button class="btn-cart" onclick="addToCart('Liar Nose Fish', 5000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Rare">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-rare"></div> Rare</div>
+                            <div class="type-badge"><div class="dot dot-ghost"></div> Ghost</div>
+                        </div>
+                        <img src="Pearl.png" alt="Ikan">
+                    </div>
+                    <h3>Pearl</h3>
+                    <p class="price">Rp 6.000</p>
+                    <button class="btn-cart" onclick="addToCart('Pearl', 6000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Legendary">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-legendary"></div> Legendary</div>
+                        </div>
+                        <img src="Nine Tailed Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Nine Tailed Fish</h3>
+                    <p class="price">Rp 20.000</p>
+                    <button class="btn-cart" onclick="addToCart('Nine Tailed Fish', 20000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Epic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-epic"></div> Epic</div>
+                            <div class="type-badge"><div class="dot dot-galaxy"></div> Galaxy</div>
+                        </div>
+                        <img src="Glowspore Toad.png" alt="Ikan">
+                    </div>
+                    <h3>Glowspore Toad</h3>
+                    <p class="price">Rp 10.000</p>
+                    <button class="btn-cart" onclick="addToCart('Glowspore Toad', 10000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Epic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-epic"></div> Epic</div>
+                            <div class="type-badge"><div class="dot dot-holographic"></div> Holographic</div>
+                        </div>
+                        <img src="Spear Guardian.png" alt="Ikan">
+                    </div>
+                    <h3>Spear Guardian</h3>
+                    <p class="price">Rp 15.000</p>
+                    <button class="btn-cart" onclick="addToCart('Spear Guardian', 15000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Epic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-epic"></div> Epic</div>
+                            <div class="type-badge"><div class="dot dot-albino"></div> Albino</div>
+                        </div>
+                        <img src="Strawberry Pufferfish.png" alt="Ikan">
+                    </div>
+                    <h3>Strawberry Pufferfish</h3>
+                    <p class="price">Rp 10.000</p>
+                    <button class="btn-cart" onclick="addToCart('Strawberry Pufferfish', 10000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Rare">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-rare"></div> Rare</div>
+                        </div>
+                        <img src="Easter Flowers Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Easter Flowers Fish</h3>
+                    <p class="price">Rp 5.000</p>
+                    <button class="btn-cart" onclick="addToCart('Easter Flowers Fish', 5000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Rare">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-rare"></div> Rare</div>
+                        </div>
+                        <img src="Chocolate Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Chocolate Fish</h3>
+                    <p class="price">Rp 9.000</p>
+                    <button class="btn-cart" onclick="addToCart('Chocolate Fish', 9000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Uncommon">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-uncommon"></div> Uncommon</div>
+                        </div>
+                        <img src="Carrot Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Carrot Fish</h3>
+                    <p class="price">Rp 13.000</p>
+                    <button class="btn-cart" onclick="addToCart('Carrot Fish', 13000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Uncommon">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-uncommon"></div> Uncommon</div>
+                        </div>
+                        <img src="Easter Bunny Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Easter Bunny Fish</h3>
+                    <p class="price">Rp 7.000</p>
+                    <button class="btn-cart" onclick="addToCart('Easter Bunny Fish', 7000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Uncommon">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-uncommon"></div> Uncommon</div>
+                            <div class="type-badge"><div class="dot dot-galaxy"></div> Galaxy</div>
+                        </div>
+                        <img src="Painted Egg Fish.png" alt="Ikan">
+                    </div>
+                    <h3>Painted Egg Fish</h3>
+                    <p class="price">Rp 5.000</p>
+                    <button class="btn-cart" onclick="addToCart('Painted Egg Fish', 5000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Epic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-epic"></div> Epic</div>
+                            <div class="type-badge"><div class="dot dot-frozen"></div> Frozen</div>
+                        </div>
+                        <img src="Easter Eel.png" alt="Ikan">
+                    </div>
+                    <h3>Easter Eel</h3>
+                    <p class="price">Rp 10.000</p>
+                    <button class="btn-cart" onclick="addToCart('Easter Eel', 10000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Epic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-epic"></div> Epic</div>
+                        </div>
+                        <img src="Toxic Jellyfish.png" alt="Ikan">
+                    </div>
+                    <h3>Toxic Jellyfish</h3>
+                    <p class="price">Rp 50.000</p>
+                    <button class="btn-cart" onclick="addToCart('Toxic Jellyfish', 50000)">Tambah Keranjang</button>
+                </div>
+
+                <div class="card" data-jenis="Secret">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-secret"></div> Secret</div>
+                            <div class="type-badge"><div class="dot dot-albino"></div> Albino</div>
+                        </div>
+                        <img src="Robot Kraken.png" alt="Ikan">
+                    </div>
+                    <h3>Robot Kraken</h3>
+                    <p class="price">Rp 80.000</p>
+                    <button class="btn-cart" onclick="addToCart('Robot Kraken', 80000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Common">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-common"></div> Common</div>
+                        </div>
+                        <img src="Electric Eel.png" alt="Ikan">
+                    </div>
+                    <h3>Electric Eel Ori</h3>
+                    <p class="price">Rp 5.000</p>
+                    <button class="btn-cart" onclick="addToCart('Electric Eel Ori', 5000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Mythic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-mythic"></div> Mythic</div>
+                            <div class="type-badge"><div class="dot dot-stone"></div> Stone</div>
+                        </div>
+                        <img src="Buaya.png" alt="Ikan">
+                    </div>
+                    <h3>Buaya Batu</h3>
+                    <p class="price">Rp 15.000</p>
+                    <button class="btn-cart" onclick="addToCart('Buaya Batu', 15000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Common">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-common"></div> Common</div>
+                        </div>
+                        <img src="Sepatu talon.png" alt="Ikan">
+                    </div>
+                    <h3>Sepatu Talon Ori</h3>
+                    <p class="price">Rp 100.000</p>
+                    <button class="btn-cart" onclick="addToCart('Sepatu Talon Ori', 100000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Mythic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-mythic"></div> Mythic</div>
+                        </div>
+                        <img src="Paus Bintang.png" alt="Ikan">
+                    </div>
+                    <h3>Paus Bintang Ori</h3>
+                    <p class="price">Rp 25.000</p>
+                    <button class="btn-cart" onclick="addToCart('Paus Bintang Ori', 25000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Uncommon">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-uncommon"></div> Uncommon</div>
+                            <div class="type-badge"><div class="dot dot-fairydust"></div> Fairy Dust</div>
+                        </div>
+                        <img src="Ikan Kambing.png" alt="Ikan">
+                    </div>
+                    <h3>Ikan Kambing Pink</h3>
+                    <p class="price">Rp 10.000</p>
+                    <button class="btn-cart" onclick="addToCart('Ikan Kambing Pink', 10000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Legendary">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-legendary"></div> Legendary</div>
+                        </div>
+                        <img src="Kepiting.png" alt="Ikan">
+                    </div>
+                    <h3>Kepiting Besar Ori</h3>
+                    <p class="price">Rp 9.000</p>
+                    <button class="btn-cart" onclick="addToCart('Kepiting Besar Ori', 9000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Mythic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-mythic"></div> Mythic</div>
+                        </div>
+                        <img src="Fossilized Shark.png" alt="Ikan">
+                    </div>
+                    <h3>Fossilized Shark Ori</h3>
+                    <p class="price">Rp 16.000</p>
+                    <button class="btn-cart" onclick="addToCart('Fossilized Shark Ori', 16000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Mythic">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-mythic"></div> Mythic</div>
+                        </div>
+                        <img src="Bucket Mawar.png" alt="Ikan">
+                    </div>
+                    <h3>Bucket Mawar Ori</h3>
+                    <p class="price">Rp 200.000</p>
+                    <button class="btn-cart" onclick="addToCart('Bucket Mawar Ori', 200000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Secret">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-secret"></div> Secret</div>
+                        </div>
+                        <img src="Ancient Whale.png" alt="Ikan">
+                    </div>
+                    <h3>Ancient Whale Ori</h3>
+                    <p class="price">Rp 80.000</p>
+                    <button class="btn-cart" onclick="addToCart('Ancient Whale Ori', 80000)">Tambah Keranjang</button>
+                </div>
+
+                 <div class="card" data-jenis="Uncommon">
+                    <div class="card-img-container">
+                        <div class="badges-wrapper">
+                            <div class="type-badge"><div class="dot dot-uncommon"></div> Uncommon</div>
+                        </div>
+                        <img src="Baby Shrimp.png" alt="Ikan">
+                    </div>
+                    <h3>Baby Shrimp Ori</h3>
+                    <p class="price">Rp 2.000</p>
+                    <button class="btn-cart" onclick="addToCart('Baby Shrimp Ori', 2000)">Tambah Keranjang</button>
+                </div>
+            </div>
+        </main>
+
+<footer>
+        <p>© 2026 Shofish Market ✨ - High Quality Collections</p>
+    </footer>
+
+  <div id="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-sidebar" class="cart-hidden">
+    <div class="cart-header">
+        <h3>Keranjang Belanja</h3>
+        <button onclick="toggleCart()">✖</button>
+    </div>
+    <div id="cart-items">
+        </div>
+    <div class="cart-footer">
+        <div class="total-price">Total: <span id="cart-total">Rp 0</span></div>
+        <button class="btn-checkout" onclick="checkout()">Check Out</button>
+    </div>
+</div>
+
+
+</body>
+</html>

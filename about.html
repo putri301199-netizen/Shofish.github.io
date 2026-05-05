@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofish - Sparkling Blue Market</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="javaikan.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Shofish ✨</div>
+        <div class="nav-menu">
+            <a href="web ikan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+     <section  class="about"style="padding: 80px 10%; background: white; display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+    <div class="about-image-container" style="flex: 1; min-width: 300px;">
+        <img src="Tentang Kami.png" alt="Tentang Shofish" style="width: 100%; height: auto; border-radius: 20px; box-shadow: 20px 20px 0 #00a8ff;">
+    </div>
+    <div class="about-text-content" style="flex: 1; min-width: 300px;">
+        <h2 style="color: #0086cc; margin-bottom: 20px;">🌊 Tentang Kami</h2>
+        <p style="line-height: 1.8;">Shofish adalah pasar ikan hias virtual terbaik yang menyediakan berbagai macam spesies langka. Kami menjamin keindahan, dan keunikan setiap koleksi kami. Dengan pengalaman lebih dari 2 bulan, kami berkomitmen untuk menjadi destinasi utama para pecinta ikan.</p>
+        <p style="margin-top: 15px; line-height: 1.8;">Visi kami adalah menciptakan komunitas yang peduli terhadap kelestarian ikan sambil menikmati keindahan makhluk-makhluk laut Talon yang menakjubkan.</p>
+    </div>
+</section>
+
+    
+
+<footer>
+        <p>© 2026 Shofish Market ✨ - High Quality Collections</p>
+    </footer>
+
+    <div id="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-sidebar" class="cart-hidden">
+    <div class="cart-header">
+        <h3>Keranjang Belanja</h3>
+        <button onclick="toggleCart()">✖</button>
+    </div>
+    <div id="cart-items">
+        </div>
+    <div class="cart-footer">
+        <div class="total-price">Total: <span id="cart-total">Rp 0</span></div>
+        <button class="btn-checkout" onclick="checkout()">Check Out</button>
+    </div>
+</div>
+
+</body>
+</html>

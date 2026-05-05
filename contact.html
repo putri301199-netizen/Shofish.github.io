@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofish - Sparkling Blue Market</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="javaikan.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Shofish ✨</div>
+        <div class="nav-menu">
+            <a href="web ikan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+     <section id="contact">
+    <h2 style="color: #0086cc; margin-bottom: 10px; text-align: center;">Hubungi Kami</h2>
+    <p style="text-align: center;">Tim Shofish siap melayani pertanyaan kamu 24/7</p>
+    
+    <div class="contact-container">
+        <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>WhatsApp</h3>
+            <p>Konsultasi cepat via chat admin</p>
+            <a href="https://wa.me/6285172488973" class="contact-link">Hubungi WA</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">📸</div>
+            <h3>Instagram</h3>
+            <p>Lihat update koleksi terbaru</p>
+            <a href="https://instagram.com/shofish_tru" class="contact-link ig-style">Follow IG</a>
+        </div>
+    </div>
+</section>
+
+    
+
+    <footer>
+        <p>© 2026 Shofish Market ✨ - High Quality Collections</p>
+    </footer>
+
+<div id="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-sidebar" class="cart-hidden">
+    <div class="cart-header">
+        <h3>Keranjang Belanja</h3>
+        <button onclick="toggleCart()">✖</button>
+    </div>
+    <div id="cart-items">
+        </div>
+    <div class="cart-footer">
+        <div class="total-price">Total: <span id="cart-total">Rp 0</span></div>
+        <button class="btn-checkout" onclick="checkout()">Check Out</button>
+    </div>
+</div>
+        
+
+</body>
+</html>

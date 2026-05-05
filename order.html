@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofish - Sparkling Blue Market</title>
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">Shofish ✨</div>
+        <div class="nav-menu">
+            <a href="web ikan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section class="order">
+        <div class="form-box">
+            <h2 style="text-align: center; color: #0086cc; margin-bottom: 20px;">Form Pemesanan</h2>
+            <div id="ringkasan-pesanan">
+                <h4>Ringkasan Keranjang</h4>
+                <div id="daftar-item">
+                    <p class="empty-cart"></p>
+                </div>
+                <p class="total-ringkasan-row">
+                    Total: <span id="total-harga-ringkasan">Rp 0</span>
+                </p>
+            </div>
+
+            <form id="orderForm">
+                <label>Username Roblox</label>
+                <input type="text" id="robloxUser" placeholder="Username Kamu...">
+                
+                <label>Pilih Pembayaran</label>
+                <select id="metodeBayar">
+                    <option value="Dana">Dana</option>
+                    <option value="Bank Mandiri">Bank Mandiri</option>
+                </select>
+
+                <label>Email</label>
+                <input type="email" id="emailUser" placeholder="contoh@gmail.com" oninput="validasiEmail(this)">
+                <div id="emailHint" class="email-hint"></div>
+
+                <button type="button" onclick="buatStruk()" class="btn-pesan-sekarang">Pesan Sekarang</button>
+            </form>
+        </div>
+    </section>  
+
+    <div id="modalStruk" class="modal-overlay">
+       <div class="receipt-card">
+        <div class="receipt-card-header">
+            <div class="receipt-icon">✨</div>
+            <div class="receipt-title">SHOFISH</div>
+            <div class="receipt-subtitle">Sparkling Blue Market</div>
+        </div>
+            <div class="receipt-top"></div>
+            <div class="receipt-body" id="isiStruk"></div>
+            <div class="receipt-bottom"></div>
+            <div class="receipt-footer">
+                <button onclick="window.location.href='katalog.html'" class="btn-close-modal">← Kembali ke Katalog</button>
+            </div>
+
+           
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Shofish Market ✨ - High Quality Collections</p>
+    </footer>
+    <!-- EmailJS untuk kirim struk ke email pelanggan -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="javaikan.js" defer></script>
+</body>
+</html>
